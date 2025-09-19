@@ -1,15 +1,24 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-public class Main {
-    public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+import java.util.Scanner;
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+public class Main {
+
+    public static void main(String[] args) { // psvm
+        Scanner sc = new Scanner(System.in); // Oggetto con cui si prendono dati da input
+
+        System.out.println("Inserisci un numero:"); // Stampa, se scrivi sout lo fa già da solo (ci sono varie versioni)
+        int numero = sc.nextInt(); //con .next si ricevono stringhe (parole, non frasi intere) con .nextLine si prende la frase
+        System.out.println(numero);
+        // var serve principalmente per fare assegnazione di un tipo specifico di variabile - BINDING DINAMICO
+
+        /* STRINGHE
+        System.out.println("Inserisci una frase:");
+        String frase = sc.nextLine();
+        System.out.println("Frase letta: " + frase);
+
+        System.out.println("Inserisci una frase:");
+        String parola = sc.next();
+        System.out.println("Ho letto solo la prima parola: " + parola);
+        */
     }
+
 }
